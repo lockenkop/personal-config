@@ -1,8 +1,10 @@
 #!/bin/sh
 
-if [ -f ~/.vnc/mersewm_passwd ]; then
-  echo "passwd File already exists, skipping download"
+if ! [ -f ~/.vnc/mersewm_passwd ]; then
+  echo "passwd File download"
   scp travis@travis-wm:/home/travis/.vnc/passwd ~/.vnc/mersewm_passwd
+else
+  echo "passwd found, skipping download"
 fi
 
 echo "opening ssh tunnel"
