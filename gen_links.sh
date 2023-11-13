@@ -15,9 +15,16 @@ function mkln () {
     ln -s "$(pwd)/$from" "$to"
 }
 
-mkln "zsh"                  "$HOME/.zsh"
-mkln "zsh/.zshrc"           "$HOME/.zshrc"
-mkln ".vimrc"               "$HOME/.vimrc"
-mkln "autorandr"            "$HOME/.config/autorandr"
-mkln "scripts"              "$HOME/scripts"
+if [[ $(whoami) == "jonas" ]]; then
+    mkln "zsh"                                          "$HOME/.zsh"
+    mkln "zsh/.zshrc"                                   "$HOME/.zshrc"
+    mkln ".vimrc"                                       "$HOME/.vimrc"
+    mkln "autorandr"                                    "$HOME/.config/autorandr"
+    mkln "autostart"                                    "$HOME/.config/autostart"
+    mkln "scripts"                                      "$HOME/scripts"
+fi
 
+if [[ $(whoami) == "root" ]]; then
+    mkln "scripts/display/nvidia/fernseher.sh"          "/usr/bin/fernseher"
+    mkln "scripts/display/nvidia/standard.sh"           "/usr/bin/standard"
+fi

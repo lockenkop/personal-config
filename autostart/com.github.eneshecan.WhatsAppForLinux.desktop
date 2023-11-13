@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=GTK;GNOME;Network;
+Comment=An unofficial WhatsApp desktop application for Linux
+Exec=whatsapp-for-linux %u
+GenericName=Unofficial WhatsApp client
+Icon=com.github.eneshecan.WhatsAppForLinux
+Keywords=chat;im;messaging;messenger;sms;whatsapp;whatsapp-desktop;
+MimeType=x-scheme-handler/whatsapp
+Name=WhatsApp for Linux
+StartupWMClass=whatsapp-for-linux
+Type=Application
+Version=1.0
