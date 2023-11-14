@@ -36,4 +36,15 @@
 ehthumbs.db
 Thumbs.db
 
+
+# zsh ignores #
+###############
 zsh/cache/
+
+# vscode config ignores #
+#########################
+#maybe some of them should'nt be ignored
+Code/User/History
+Code/User/Snippets
+Code/User/globalStorage
+Code/User/workspaceStorage
