@@ -7,7 +7,7 @@ function mkln () {
     to="$2"
 
     if ! [ -L "$to" ]; then # Move if it is not a link
-        mv "$to" "$to_OLD" > /dev/null 2> /dev/null && echo "Moved $to to $to_OLD"
+        mv "$to" "${to}_OLD" > /dev/null 2> /dev/null && echo "Moved $to to ${to}_OLD"
     else # Otherwise, yeet it
         target="$(readlink -f "$to")"
         rm "$to" &> /dev/null && echo "Removed previous link ${to/$HOME/~} -> ${target/$HOME/~}"
@@ -23,7 +23,9 @@ if [[ $(whoami) == "jonas" ]]; then
     mkln "autostart"                                    "$HOME/.config/autostart"
     mkln "scripts"                                      "$HOME/scripts"
     mkln "IoTuring"                                     "$HOME/.config/IoTuring"
-    mkln "Code/User/settings.json"                      "$HOME/.config/Code - OSS/User/settings.json" #you don't have to escape spaces, since it's passed as a string (still -.- spaces!!!)
+    mkln "Code/User"                                    "$HOME/.config/Code - OSS/User" #you don't have to escape spaces, since it's passed as a string (still -.- spaces!!!)
+    mkln "gtk-3.0"                                      "$HOME/.config/gtk-3.0"
+    mkln "kwinrc"                                       "$HOME/.config/kwinrc"
 fi
 
 
