@@ -26,6 +26,8 @@ if [[ $(whoami) == "jonas" ]]; then
     mkln "Code/User"                                    "$HOME/.config/Code - OSS/User" #you don't have to escape spaces, since it's passed as a string (still -.- spaces!!!)
     mkln "gtk-3.0"                                      "$HOME/.config/gtk-3.0"
     mkln "kwinrc"                                       "$HOME/.config/kwinrc"
+    mkln "rofi"                                         "$HOME/.config/rofi"
+    mkln "rofi/squared-material-red.rasi"               "$HOME/.local/share/rofi/themes/squared-material-red.rasi"
 fi
 
 
