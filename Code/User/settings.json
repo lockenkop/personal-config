@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Default High Contrast",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "explorer.confirmDragAndDrop": false
+}

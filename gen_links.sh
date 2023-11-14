@@ -23,6 +23,7 @@ if [[ $(whoami) == "jonas" ]]; then
     mkln "autostart"                                    "$HOME/.config/autostart"
     mkln "scripts"                                      "$HOME/scripts"
     mkln "IoTuring"                                     "$HOME/.config/IoTuring"
+    mkln "Code/User/settings.json"                      "$HOME/.config/Code - OSS/User/settings.json" #you don't have to escape spaces, since it's passed as a string (still -.- spaces!!!)
 fi
 
 
