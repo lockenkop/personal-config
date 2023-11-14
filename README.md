@@ -37,7 +37,7 @@ credit: https://bitwornhat.com/posts/code-oss-and-copilot
 stores kwin (KDE compositor) configuration
 This includes the tiling configuration for each monitor.
 The monitors are indexed by some ID This could/will change per system/install
-```toml
+```ini
 [Tiling][9a2c812a-09ef-5827-b5c5-e7249360d0c3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
