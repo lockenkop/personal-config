@@ -1,1 +1,2 @@
-yay_list.txt
+mercury-browser-bin
+fancontrol-gui

@@ -54,16 +54,30 @@ function check_command () {
 		echo "$1 present"
 		return 0
 	elif $install_missing ; then
+		echo "trying to install $1"
 		case $1 in 
 			*"${pacmans[@]}"*)
+				echo "$1 found in pacman list, installing $1 with pacman"
 				install_pacman_package $1
 				;;
+			*"${python_pacman[@]}"*)
+				echo "$1 found in python_pacmans list, installing $1 with pacman"
+				install_pacman_package python-$1
+				;;	
 			*"${yays[@]}"*)
+				echo "$1 found in yay list, installing $1 with yay"
 				install_yay_package $1
 				;;
 			*"${from_sources[@]}"*)
+				echo "$1 found in from source list, installing $1 from source"
 				eval install_$1
 				;;
+			*"${pips[@]}"*)
+				echo "$1 found in pips list, installing $1 with pipx"
+				install_pipx_package $1
+				;;	
+			*)
+				echo "$1 not found in any list, don't know how to install it"
 		esac
 	else 
 		echo "$1 is not installed, use -i | --install-if-missing to automatically install missing dependecies"
@@ -81,30 +95,46 @@ function install_yay () {
 	sudo rm -r yay/
 }
 
-function install_IoTuring () {
-	#add to pipxs
+function install_pipx_package () {
 	check_command pipx
-	pipx install IoTuring
+	pipx install $1
 }
 
 function install_pacman_package () {
 	#TODO implement sudo for pacman
-	echo "installing pacman package will need sudo"
+	echo "installing pacman package $1 will need sudo"
 	#sudo -s package=$1 << 
-    	"pacman -Syu --needed $package"
-	#'YOOOO'
+	sudo pacman -S --needed $1
 	#sudo -k
 }
 
 function print_usage() {
-	echo "TODO"
+	echo "--install-if-missing        -i -- install packages that are missing"
+	echo "--all                       -a -- install all packages"
+	
 }
 
-from_sources=("yay" "IoTuring")
+
+declare -a python_pacman
+readarray -t python_pacman < "python_pacman_list.txt"
+echo "python_pacman ${python_pacman[@]}"
+
+declare -a from_sources
+readarray -t from_sources < "from_source_list.txt"
+echo "from_source ${from_sources[@]}"
+
+declare -a pips
+readarray -t pips < "pip_list.txt"
+echo "pips ${pips[@]}"
+
 declare -a yays
 readarray -t yays < "yay_list.txt"
+echo "yays ${yays[@]}"
+
 declare -a pacmans
 readarray -t pacmans < "pacman_list.txt"
+echo "pacmans ${pacmans[@]}"
+
 
 
 function install_all () {
@@ -120,22 +150,26 @@ function install_all () {
 	done
 }
 
-while test $# -gt 0; do
-  case "$1" in
-    -i | --install-if-missing) 
-	install_missing='true' 
-	;;
-	-a | --all)
-	install_all
-	;;
-    *) 
-	print_usage
-    exit 1
-	;;
-  esac
-done
+#while test $# -gt 0; do
+#  case "$1" in
+#    -i | --install-if-missing)
+#	install_missing='true'
+#	;;
+#	-a | --all)
+#	install_all
+#	;;
+#	-c | --check)
+#	install_missing='true'
+#	check_command $2
+#	;;
+#    *) 
+#	print_usage
+#    exit 1
+#	;;
+#  esac
+#done
 
-
+install_missing='true'
 
 #check_ssh_keys_present
 #check_command git
@@ -144,7 +178,7 @@ done
 #check command python
 #check command pip
 #check_command topgrade
-#check_command IoTuring
+check_command IoTuring
 #install_rust
 #check_github_auth
 

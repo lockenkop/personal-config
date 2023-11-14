@@ -22,7 +22,10 @@ if [[ $(whoami) == "jonas" ]]; then
     mkln "autorandr"                                    "$HOME/.config/autorandr"
     mkln "autostart"                                    "$HOME/.config/autostart"
     mkln "scripts"                                      "$HOME/scripts"
+    mkln "IoTuring"                                     "$HOME/.config/IoTuring"
 fi
+
+
 
 if [[ $(whoami) == "root" ]]; then
     mkln "scripts/display/nvidia/fernseher.sh"          "/usr/bin/fernseher"
