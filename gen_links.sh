@@ -37,4 +37,5 @@ if [[ $(whoami) == "root" ]]; then
     mkln "scripts/display/nvidia/fernseher.sh"          "/usr/bin/fernseher"
     mkln "scripts/display/nvidia/standard.sh"           "/usr/bin/standard"
     mkln "fancontrol"                                   "/etc/fancontrol"
+    mkln "autostart/fancontrol.service"                 "/usr/lib/systemd/system/fancontrol.service"
 fi
