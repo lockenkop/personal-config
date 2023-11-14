@@ -1,0 +1,13 @@
+# This file was created by Fancontrol-GUI
+INTERVAL=10
+DEVPATH=hwmon3=devices/platform/PNP0C14:02/wmi_bus/wmi_bus-PNP0C14:02/466747A0-70EC-11DE-8A39-0800200C9A66 hwmon5=devices/pci0000:00/0000:00:01.3/0000:02:00.0/usb1/1-7/1-7:1.0/0003:1B1C:0C10.000F 
+DEVNAME=hwmon3=asus_wmi_sensors hwmon5=corsaircpro 
+FCTEMPS=hwmon5/pwm1=hwmon3/temp1_input hwmon5/pwm2=hwmon3/temp1_input hwmon5/pwm3=hwmon3/temp1_input hwmon5/pwm4=hwmon3/temp1_input hwmon5/pwm5=hwmon3/temp1_input hwmon5/pwm6=hwmon3/temp1_input 
+FCFANS=hwmon5/pwm1=hwmon5/fan1_input hwmon5/pwm2=hwmon5/fan2_input hwmon5/pwm3=hwmon5/fan3_input hwmon5/pwm4=hwmon5/fan4_input hwmon5/pwm5=hwmon5/fan5_input hwmon5/pwm6=hwmon5/fan6_input 
+MINTEMP=hwmon5/pwm1=30 hwmon5/pwm2=30 hwmon5/pwm3=30 hwmon5/pwm4=30 hwmon5/pwm5=30 hwmon5/pwm6=30 
+MAXTEMP=hwmon5/pwm1=90 hwmon5/pwm2=100 hwmon5/pwm3=90 hwmon5/pwm4=90 hwmon5/pwm5=90 hwmon5/pwm6=90 
+MINSTART=hwmon5/pwm1=255 hwmon5/pwm2=255 hwmon5/pwm3=255 hwmon5/pwm4=255 hwmon5/pwm5=255 hwmon5/pwm6=255 
+MINSTOP=hwmon5/pwm1=51 hwmon5/pwm2=52 hwmon5/pwm3=51 hwmon5/pwm4=50 hwmon5/pwm5=51 hwmon5/pwm6=50 
+MINPWM=hwmon5/pwm1=0 hwmon5/pwm2=0 hwmon5/pwm3=0 hwmon5/pwm4=0 hwmon5/pwm5=0 hwmon5/pwm6=0 
+MAXPWM=hwmon5/pwm1=255 hwmon5/pwm2=255 hwmon5/pwm3=134 hwmon5/pwm4=120 hwmon5/pwm5=122 hwmon5/pwm6=98 
+AVERAGE=hwmon5/pwm1=1 hwmon5/pwm2=1 hwmon5/pwm3=1 hwmon5/pwm4=1 hwmon5/pwm5=1 hwmon5/pwm6=1 

@@ -28,6 +28,7 @@ if [[ $(whoami) == "jonas" ]]; then
     mkln "kwinrc"                                       "$HOME/.config/kwinrc"
     mkln "rofi"                                         "$HOME/.config/rofi"
     mkln "rofi/squared-material-red.rasi"               "$HOME/.local/share/rofi/themes/squared-material-red.rasi"
+    mkln "plasma-org.kde.plasma.desktop-appletsrc"      "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
 fi
 
 
@@ -35,4 +36,5 @@ fi
 if [[ $(whoami) == "root" ]]; then
     mkln "scripts/display/nvidia/fernseher.sh"          "/usr/bin/fernseher"
     mkln "scripts/display/nvidia/standard.sh"           "/usr/bin/standard"
+    mkln "fancontrol"                                   "/etc/fancontrol"
 fi
