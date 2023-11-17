@@ -1,2 +1,3 @@
 mercury-browser-bin
 fancontrol-gui
+gwe

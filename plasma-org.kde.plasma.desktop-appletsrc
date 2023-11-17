@@ -25,6 +25,8 @@ DialogWidth=720
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=2044
+positions={"5120x1440":["1"\\,"46"\\,"desktop:/steam.desktop"\\,"0"\\,"0"]\\,"3840x2160":[""]}
+sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Image=/usr/share/wallpapers/Cluster/
@@ -70,6 +72,9 @@ PreloadWeight=42
 [Containments][10][Applets][18]
 immutability=1
 plugin=org.kde.kdeconnect
+
+[Containments][10][Applets][18][Configuration]
+PreloadWeight=55
 
 [Containments][10][Applets][19][Configuration]
 PreloadWeight=42
@@ -232,7 +237,7 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][28][Applets][41][Configuration]
-PreloadWeight=42
+PreloadWeight=34
 
 [Containments][28][Applets][42]
 immutability=1
@@ -310,4 +315,4 @@ AppletOrder=45;5;44;6;9;21
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,264bfff9-3d15-4fd4-a858-9e380d93fc17
+screenMapping=desktop:/steam.desktop,0,264bfff9-3d15-4fd4-a858-9e380d93fc17,file:///home/jonas/Desktop/google.desktop,0,264bfff9-3d15-4fd4-a858-9e380d93fc17

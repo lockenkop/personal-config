@@ -34,3 +34,4 @@ winetricks
 yakuake
 zsh
 zsh-theme-powerlevel10k
+mangohud
