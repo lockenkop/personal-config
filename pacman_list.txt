@@ -37,3 +37,4 @@ zsh-theme-powerlevel10k
 mangohud
 tldr
 fzf
+rofi

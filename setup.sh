@@ -183,10 +183,10 @@ install_missing='true'
 #check command python
 #check command pip
 #check_command topgrade
-check_command IoTuring
+#check_command IoTuring
 #install_rust
 #check_github_auth
-
+install_all
 
 
 
