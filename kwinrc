@@ -11,8 +11,28 @@ Number=1
 Rows=1
 
 [Plugins]
+blurEnabled=false
+desktopgridEnabled=false
+kwin4_effect_fadingpopupsEnabled=false
+kwin4_effect_windowapertureEnabled=false
+overviewEnabled=false
+screenedgeEnabled=false
+slidingpopupsEnabled=false
+windowviewEnabled=false
 wobblywindowsEnabled=true
 zoomEnabled=false
+
+[TabBox]
+ActivitiesMode=0
+DesktopMode=0
+LayoutName=compact
+OrderMinimizedMode=1
+
+[TabBoxAlternative]
+ActivitiesMode=0
+DesktopMode=0
+HighlightWindows=false
+ShowTabBox=false
 
 [Tiling]
 padding=0

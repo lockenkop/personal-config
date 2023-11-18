@@ -25,7 +25,7 @@ DialogWidth=720
 [Containments][1][General]
 ToolBoxButtonState=topcenter
 ToolBoxButtonX=2044
-positions={"5120x1440":["1"\\,"46"\\,"desktop:/steam.desktop"\\,"0"\\,"0"]\\,"3840x2160":[""]}
+positions={"5120x1440":[]\\,"3840x2160":[""]}
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
@@ -36,7 +36,7 @@ SlidePaths=/usr/share/wallpapers/
 activityId=
 formfactor=3
 immutability=1
-lastScreen=0
+lastScreen=1
 location=5
 plugin=org.kde.plasma.private.systemtray
 popupHeight=432
@@ -267,23 +267,28 @@ immutability=1
 lastScreen=0
 location=5
 plugin=org.kde.panel
+transient=true
 wallpaperplugin=org.kde.image
 
 [Containments][3][Applets][21]
 immutability=1
 plugin=org.kde.plasma.digitalclock
+transient=true
 
 [Containments][3][Applets][44]
 immutability=1
 plugin=org.kde.plasma.panelspacer
+transient=true
 
 [Containments][3][Applets][45]
 immutability=1
 plugin=org.kde.plasma.panelspacer
+transient=true
 
 [Containments][3][Applets][5]
 immutability=1
 plugin=org.kde.plasma.icontasks
+transient=true
 
 [Containments][3][Applets][5][Configuration][ConfigDialog]
 DialogHeight=540
@@ -297,10 +302,12 @@ launchers=preferred://filemanager,applications:mercury-browser.desktop,applicati
 [Containments][3][Applets][6]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
+transient=true
 
 [Containments][3][Applets][9]
 immutability=1
 plugin=org.kde.plasma.systemtray
+transient=true
 
 [Containments][3][Applets][9][Configuration]
 PreloadWeight=100
@@ -310,9 +317,6 @@ SystrayContainmentId=10
 DialogHeight=1440
 DialogWidth=167
 
-[Containments][3][General]
-AppletOrder=45;5;44;6;9;21
-
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/steam.desktop,0,264bfff9-3d15-4fd4-a858-9e380d93fc17,file:///home/jonas/Desktop/google.desktop,0,264bfff9-3d15-4fd4-a858-9e380d93fc17
+screenMapping=file:///home/jonas/Desktop/google.desktop,0,264bfff9-3d15-4fd4-a858-9e380d93fc17

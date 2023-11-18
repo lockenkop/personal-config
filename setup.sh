@@ -84,6 +84,11 @@ function check_command () {
 	fi
 }
 
+function install_yay_package () {
+	check_command yay
+	yay install $1
+}
+
 function install_yay () {
 	echo "installing yay from source"
 	check_command git

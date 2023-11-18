@@ -4,7 +4,8 @@
 "terminal.integrated.fontFamily": "MesloLGS NF",
 "explorer.confirmDragAndDrop": false,
 "python.autoComplete.extraPaths": [
-    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.0-linux-x64"
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.0-linux-x64",
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.3-linux-x64"
 ],
 "diffEditor.codeLens": true
 }
