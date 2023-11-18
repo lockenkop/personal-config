@@ -5,7 +5,13 @@
 
 - [ ] add Todos
 - [ ] add code extensions
-
+- [ ] add keyboard shortcuts
+- [ ] set default browser
+- [ ] maybe force yay install with correct package names
+- [ ] yay install skip if installed
+- [ ] run mhwd graphics driver installation
+- [ ] start code oss one time or generate user folder ln: failed to create symbolic link '/home/jonas/.config/Code - OSS/User': No such file or directory
+- [ ] maybe start rofi before generating link to config or create the folder ln: failed to create symbolic link '/home/jonas/.local/share/rofi/themes/squared-material-red.rasi': No such file or directory
 
 
 ### creating a new link
