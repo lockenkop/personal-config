@@ -86,7 +86,7 @@ function check_command () {
 
 function install_yay_package () {
 	check_command yay
-	yay install $1
+	yay $1
 }
 
 function install_yay () {
