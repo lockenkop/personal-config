@@ -12,6 +12,7 @@
 - [ ] run mhwd graphics driver installation
 - [ ] start code oss one time or generate user folder ln: failed to create symbolic link '/home/jonas/.config/Code - OSS/User': No such file or directory
 - [ ] maybe start rofi before generating link to config or create the folder ln: failed to create symbolic link '/home/jonas/.local/share/rofi/themes/squared-material-red.rasi': No such file or directory
+- [ ] fix fancontrol on startup, maybe mklinks_hwmon does it. modules are not loaded in order and fancontrol will not find the right devpaths
 
 
 ### creating a new link

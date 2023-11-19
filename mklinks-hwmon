@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+mount hwmon-tmpfs /sys/class/hwmon/ -t tmpfs -osize=64k
+cd /sys/class/hwmon/
+ln -s ../../devices/platform/coretemp.0/hwmon/hwmon? hwmon0
+ln -s ../../devices/pci0000:00/0000:00:03.0/0000:01:00.0/hwmon/hwmon? hwmon2
+ln -s ../../devices/virtual/hwmon/hwmon? hwmon1
+ln -s ../../devices/platform/f71882fg.2560/hwmon/hwmon? hwmon3
+
