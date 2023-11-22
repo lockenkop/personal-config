@@ -35,13 +35,16 @@ HighlightWindows=false
 ShowTabBox=false
 
 [Tiling]
-padding=0
+padding=4
+
+[Tiling][53161a2c-041e-50d0-b69f-290e97d1aa9d]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][6245bd77-8043-5253-a04c-9a647f62f63d]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.4990234375},{"width":0.2509765625}]}
 
 [Tiling][9a2c812a-09ef-5827-b5c5-e7249360d0c3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}

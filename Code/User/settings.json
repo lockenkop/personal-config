@@ -1,11 +1,28 @@
 {
-"workbench.colorTheme": "Default High Contrast",
+"workbench.colorTheme": "Default Dark+",
 "terminal.integrated.defaultProfile.linux": "zsh",
 "terminal.integrated.fontFamily": "MesloLGS NF",
 "explorer.confirmDragAndDrop": false,
 "python.autoComplete.extraPaths": [
     "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.0-linux-x64",
-    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.3-linux-x64"
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.3-linux-x64",
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.4-linux-x64"
 ],
-"diffEditor.codeLens": true
+"diffEditor.codeLens": true,
+"redhat.telemetry.enabled": false,
+"syntax.highlightLanguages": [
+    "c",
+    "cpp",
+    "python",
+    "typescript",
+    "typescriptreact",
+    "javascript",
+    "go",
+    "rust",
+    "php",
+    "ruby",
+    "shellscript",
+    "ocaml",
+    "lua"
+]
 }

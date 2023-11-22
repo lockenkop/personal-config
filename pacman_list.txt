@@ -1,5 +1,4 @@
 cmake
-code
 discord
 flatpak
 gamescope

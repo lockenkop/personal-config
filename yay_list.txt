@@ -1,3 +1,4 @@
 mercury-browser-bin
 fancontrol-gui
 gwe
+visual-studio-code-bin
