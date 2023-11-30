@@ -10,13 +10,13 @@ output DP-4
 off
 output DP-5
 off
-output DP-0
+output DP-2
 crtc 1
 mode 3840x2160
-pos 509x0
+pos 519x0
 rate 60.00
 x-prop-non_desktop 0
-output DP-2
+output DP-0
 crtc 0
 mode 5120x1440
 pos 0x2160

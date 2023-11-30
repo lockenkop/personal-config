@@ -1,1 +1,63 @@
-{"active_entities": [{"controller": "corsaircpro", "tag": "commander", "type": "Fanspeed"}], "active_warehouses": [{"address": "mqtt.merseserver.de", "port": 1883, "name": "Fenchel-Desktop", "username": "", "password": "", "add_name": "Y", "use_tag": "N", "type": "HomeAssistant"}]}
+{
+    "active_entities": [
+        {
+            "type": "Temperature"
+        },
+        {
+            "type": "Volume"
+        },
+        {
+            "type": "BootTime"
+        },
+        {
+            "type": "Cpu"
+        },
+        {
+            "type": "Power"
+        },
+        {
+            "entity_type": "button",
+            "command_regex": null,
+            "command_length": "inf",
+            "command_on": "autorandr fernseher",
+            "command_off": null,
+            "command_state": null,
+            "unit": null,
+            "decimals": null,
+            "command_open": null,
+            "command_close": null,
+            "command_stop": null,
+            "tag": "fernseher",
+            "type": "Terminal"
+        },
+        {
+            "path": "/boot/efi",
+            "tag": "boot",
+            "type": "Disk"
+        },
+        {
+            "controller": "corsaircpro",
+            "threshold": "200",
+            "tag": "corsair",
+            "type": "Fanspeed"
+        },
+        {
+            "controller": "corsaircpro",
+            "threshold": "200",
+            "tag": "corsair",
+            "type": "Fanspeed"
+        }
+    ],
+    "active_warehouses": [
+        {
+            "address": "mqtt.merseserver.de",
+            "port": 1883,
+            "name": "Fenchel-Desktop",
+            "username": "",
+            "password": "",
+            "add_name": "Y",
+            "use_tag": "N",
+            "type": "HomeAssistant"
+        }
+    ]
+}

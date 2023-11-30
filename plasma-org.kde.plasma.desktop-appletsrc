@@ -7,10 +7,11 @@ RightButton;NoModifier=org.kde.contextmenu
 
 [Containments][1]
 ItemGeometries-1760x1440=Applet-46:336,48,480,160,0;Applet-47:816,16,496,112,0;Applet-51:832,128,336,496,0;
-ItemGeometries-3840x1080=
-ItemGeometries-3840x2160=Applet-47:816,16,496,112,0;Applet-51:832,128,336,496,0;Applet-46:1376,48,1024,160,0;
-ItemGeometries-5120x1440=Applet-47:1456,16,496,112,0;Applet-51:1472,128,432,496,0;Applet-46:2016,48,1024,160,0;
-ItemGeometriesHorizontal=Applet-46:336,48,480,160,0;Applet-47:816,16,496,112,0;Applet-51:832,128,336,496,0;
+ItemGeometries-2560x1440=Applet-47:816,16,496,112,0;Applet-51:832,128,480,496,0;Applet-46:1376,48,1024,160,0;Applet-52:2128,32,336,288,0;
+ItemGeometries-3840x1080=Applet-47:1680,64,480,112,0;Applet-51:1680,176,480,496,0;Applet-46:2416,48,224,160,0;Applet-52:2768,32,336,288,0;
+ItemGeometries-3840x2160=Applet-47:816,16,496,112,0;Applet-51:832,128,480,496,0;Applet-46:1376,48,1024,160,0;Applet-52:2128,208,368,480,0;
+ItemGeometries-5120x1440=Applet-47:1456,16,496,112,0;Applet-51:1472,128,432,496,0;Applet-46:2016,48,1024,160,0;Applet-52:2768,208,336,288,0;
+ItemGeometriesHorizontal=Applet-47:816,16,496,112,0;Applet-51:832,128,480,496,0;Applet-46:1376,48,1024,160,0;Applet-52:2128,208,368,480,0;
 activityId=264bfff9-3d15-4fd4-a858-9e380d93fc17
 formfactor=0
 immutability=1
@@ -24,7 +25,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][1][Applets][46][Configuration]
-PreloadWeight=60
+PreloadWeight=65
 popupHeight=450
 popupWidth=396
 
@@ -48,14 +49,18 @@ plugin=org.kde.plasma.volume
 [Containments][1][Applets][51][Configuration][General]
 migrated=true
 
+[Containments][1][Applets][52]
+immutability=1
+plugin=org.kde.plasma.notifications
+
 [Containments][1][ConfigDialog]
 DialogHeight=912
 DialogWidth=1238
 
 [Containments][1][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=2044
-positions={"5120x1440":[]\\,"3840x2160":[]\\,"1760x1440":[""]}
+ToolBoxButtonX=2008
+positions={"5120x1440":[]\\,"3840x2160":[]\\,"1760x1440":[""]\\,"3840x1080":[]\\,"2560x1440":[""]}
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
@@ -146,12 +151,14 @@ knownItems=org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kd
 shownItems=org.kde.kdeconnect
 
 [Containments][2]
-ItemGeometries-0x0=Applet-50:272,1744,368,416,0;Applet-49:640,1696,208,240,0;
+ItemGeometries-0x0=Applet-49:640,1696,224,272,0;Applet-50:272,1712,368,448,0;Applet-53:2640,128,304,304,0;
 ItemGeometries-1760x1440=Applet-50:272,1024,368,416,0;Applet-49:640,976,224,272,0;
-ItemGeometries-3840x1080=Applet-50:272,664,368,416,0;Applet-49:640,624,224,272,0;
-ItemGeometries-3840x2160=Applet-50:272,1744,368,416,0;Applet-49:640,1696,224,272,0;
-ItemGeometries-5120x1440=Applet-49:640,976,224,272,0;Applet-50:272,992,368,448,0;
-ItemGeometriesHorizontal=Applet-50:272,664,368,416,0;Applet-49:640,624,224,272,0;
+ItemGeometries-2560x1440=Applet-49:640,1168,224,272,0;Applet-50:272,992,368,448,0;
+ItemGeometries-3840x1080=Applet-49:640,624,224,272,0;Applet-50:272,624,368,448,0;Applet-53:2640,128,304,304,0;
+ItemGeometries-3840x2160=Applet-49:640,1696,224,272,0;Applet-50:272,1712,368,448,0;Applet-53:2640,128,304,304,0;
+ItemGeometries-5120x1440=Applet-50:272,992,368,448,0;Applet-49:640,976,224,272,0;Applet-53:2640,128,304,304,0;
+ItemGeometries-640x480=Applet-49:640,1696,224,272,0;Applet-50:272,1744,368,416,0;
+ItemGeometriesHorizontal=Applet-50:272,992,368,448,0;Applet-49:640,976,224,272,0;Applet-53:2640,128,304,304,0;
 activityId=264bfff9-3d15-4fd4-a858-9e380d93fc17
 formfactor=0
 immutability=1
@@ -182,6 +189,14 @@ totalSensors=["memory/physical/usedPercent"]
 [Containments][2][Applets][50]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
+
+[Containments][2][Applets][53]
+immutability=1
+plugin=org.kde.plasma.notes
+
+[Containments][2][Applets][53][Configuration][General]
+fontSize=10
+noteId=30e56bc4-c086-4768-8bb6-8126e23e53
 
 [Containments][2][ConfigDialog]
 DialogHeight=540
@@ -294,7 +309,7 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][28][Applets][41][Configuration]
-PreloadWeight=18
+PreloadWeight=0
 
 [Containments][28][Applets][42]
 immutability=1

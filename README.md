@@ -3,16 +3,13 @@
 ### TODO
 
 
-- [ ] add Todos
 - [ ] add code extensions
 - [ ] add keyboard shortcuts
 - [ ] set default browser
 - [ ] maybe force yay install with correct package names
 - [ ] yay install skip if installed
 - [ ] run mhwd graphics driver installation
-- [ ] start code oss one time or generate user folder ln: failed to create symbolic link '/home/jonas/.config/Code - OSS/User': No such file or directory
 - [ ] maybe start rofi before generating link to config or create the folder ln: failed to create symbolic link '/home/jonas/.local/share/rofi/themes/squared-material-red.rasi': No such file or directory
-- [ ] fix fancontrol on startup, maybe mklinks_hwmon does it. modules are not loaded in order and fancontrol will not find the right devpaths
 
 
 ### creating a new link
@@ -27,20 +24,18 @@ add it to gen_links.sh
 mkln "foldername"                       "$HOME/.config/foldername"
 ```
 
+## PulseAudio
+#### move_app_sink.sh
 
-### Code OSS
+This script accepts one or two arguments:
+- $1 being the ouptput (0 headphones, 1 stereo)
+- $2 application name (Firefox, Teamspeak), optional
 
-when using fully open source vscode you can't install all extension from inside the app.
-The CLI (ctrl+shift+P) and 
-```
-Extensions:Install from VSIX...
-```
-lets you install most extententions from a .VSIX file.
-You can get those from https://marketplace.visualstudio.com/
+all streams will get moved to $1.<br>
+if $2, only streams matching their application.name to $2 will get moved to $1
 
-credit: https://bitwornhat.com/posts/code-oss-and-copilot
-
-### kwinrc
+# KDE
+## kwinrc
 stores kwin (KDE compositor) configuration
 This includes the tiling configuration for each monitor.
 The monitors are indexed by some ID This could/will change per system/install

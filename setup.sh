@@ -1,6 +1,12 @@
 #!/bin/bash
 
 
+#paths
+PACKAGELIST_PATH='packageManagers' 
+CWD=$(pwd)
+
+
+
 install_missing='false'
 
 function check_ssh_keys_present() {
@@ -120,29 +126,44 @@ function print_usage() {
 }
 
 
-declare -a python_pacman
-readarray -t python_pacman < "python_pacman_list.txt"
-echo "python_pacman ${python_pacman[@]}"
 
-declare -a from_sources
-readarray -t from_sources < "from_source_list.txt"
-echo "from_source ${from_sources[@]}"
-
-declare -a pips
-readarray -t pips < "pip_list.txt"
-echo "pips ${pips[@]}"
-
-declare -a yays
-readarray -t yays < "yay_list.txt"
-echo "yays ${yays[@]}"
-
-declare -a pacmans
-readarray -t pacmans < "pacman_list.txt"
-echo "pacmans ${pacmans[@]}"
 
 
 
 function install_all () {
+
+	# Check if the directory exists
+	if [ -d $PACKAGELIST_PATH ]; then
+		# Iterate through files in the directory
+		for file in $PACKAGELIST_PATH/*; do
+			if [ -f "$file" ]; then
+				echo "loading from: $file"
+				# Perform operations on each file here
+			fi
+		done
+	else
+		echo "Directory not found!"
+	fi
+	declare -a python_pacman
+	readarray -t python_pacman < "$PACKAGELIST_PATH/python_pacman_list.txt"
+	echo "python_pacman ${python_pacman[@]}"
+
+	declare -a from_sources
+	readarray -t from_sources < "$PACKAGELIST_PATH/from_source_list.txt"
+	echo "from_source ${from_sources[@]}"
+
+	declare -a pips
+	readarray -t pips < "$PACKAGELIST_PATH/pip_list.txt"
+	echo "pips ${pips[@]}"
+
+	declare -a yays
+	readarray -t yays < "$PACKAGELIST_PATH/yay_list.txt"
+	echo "yays ${yays[@]}"
+
+	declare -a pacmans
+	readarray -t pacmans < "$PACKAGELIST_PATH/pacman_list.txt"
+	echo "pacmans ${pacmans[@]}"
+
 	for package in ${pacmans[@]}; do
 		install_pacman_package $package
 	done
