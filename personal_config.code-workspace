@@ -4,5 +4,11 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"**/i3/config": "i3",
+			"**/polybar/config.ini": "toml"
+		}
+	},
+
 }

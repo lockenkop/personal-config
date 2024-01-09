@@ -24,5 +24,36 @@
     "shellscript",
     "ocaml",
     "lua"
-]
+],
+"evenBetterToml.formatter.allowedBlankLines": 2,
+"evenBetterToml.formatter.arrayTrailingComma": true,
+"evenBetterToml.formatter.columnWidth": 10,
+"python.analysis.extraPaths": [
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.0-linux-x64",
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.3-linux-x64",
+    "/home/jonas/.vscode-oss/extensions/continue.continue-0.6.4-linux-x64"
+],
+"git.autofetch": true,
+"colorize.colorized_colors": [
+    "BROWSERS_COLORS",
+    "HEXA",
+    "RGB",
+    "HSL"
+],
+"colorize.colorized_variables": [
+    "CSS"
+],
+"colorize.languages": [
+    "lua",
+    "css",
+    "sass",
+    "scss",
+    "less",
+    "postcss",
+    "sss",
+    "stylus",
+    "xml",
+    "svg"
+],
+"git.enableSmartCommit": true
 }

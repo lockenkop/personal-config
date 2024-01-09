@@ -31,21 +31,60 @@
             "type": "Terminal"
         },
         {
-            "path": "/boot/efi",
-            "tag": "boot",
+            "entity_type": "button",
+            "command_regex": null,
+            "command_length": "inf",
+            "command_on": "autorandr standard",
+            "command_off": null,
+            "command_state": null,
+            "unit": null,
+            "decimals": null,
+            "command_open": null,
+            "command_close": null,
+            "command_stop": null,
+            "tag": "standard",
+            "type": "Terminal"
+        },
+        {
+            "entity_type": "button",
+            "command_regex": null,
+            "command_length": "inf",
+            "command_on": "autorandr main",
+            "command_off": null,
+            "command_state": null,
+            "unit": null,
+            "decimals": null,
+            "command_open": null,
+            "command_close": null,
+            "command_stop": null,
+            "tag": "main",
+            "type": "Terminal"
+        },
+        {
+            "type": "Fanspeed"
+        },
+        {
+            "path": "/",
+            "IO": "Y",
+            "tag": "c",
             "type": "Disk"
         },
         {
-            "controller": "corsaircpro",
-            "threshold": "200",
-            "tag": "corsair",
-            "type": "Fanspeed"
+            "nicname": "enp4s0",
+            "wireless": "N",
+            "type": "Network"
         },
         {
-            "controller": "corsaircpro",
-            "threshold": "200",
-            "tag": "corsair",
-            "type": "Fanspeed"
+            "wifi": "wlp2s0f0u8",
+            "show_na": "N",
+            "tag": "wifi",
+            "type": "Wifi"
+        },
+        {
+            "wifi": "wlp2s0f0u8",
+            "show_na": "N",
+            "tag": "wifi",
+            "type": "Wifi"
         }
     ],
     "active_warehouses": [

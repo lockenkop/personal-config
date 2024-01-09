@@ -18,24 +18,34 @@ function mkln () {
 if [[ $(whoami) == "jonas" ]]; then
     mkln "zsh"                                          "$HOME/.zsh"
     mkln "zsh/.zshrc"                                   "$HOME/.zshrc"
+    mkln "zsh/.zprofile"                                "$HOME/.zprofile"
+    mkln "alacritty/alacritty.toml"                                "$HOME/.config/alacritty/alacritty.toml"
     mkln ".vimrc"                                       "$HOME/.vimrc"
     mkln "autorandr"                                    "$HOME/.config/autorandr"
     mkln "autostart"                                    "$HOME/.config/autostart"
     mkln "scripts"                                      "$HOME/scripts"
     mkln "IoTuring"                                     "$HOME/.config/IoTuring"
-    mkln "Code/User"                                    "$HOME/.config/Code - OSS/User" #you don't have to escape spaces, since it's passed as a string (still -.- spaces!!!)
+    mkln "Code/User"                                    "$HOME/.config/Code/User"
     mkln "gtk-3.0"                                      "$HOME/.config/gtk-3.0"
+    mkln "gtk-4.0"                                      "$HOME/.config/gtk-4.0"
     mkln "kwinrc"                                       "$HOME/.config/kwinrc"
     mkln "rofi"                                         "$HOME/.config/rofi"
     mkln "rofi/squared-material-red.rasi"               "$HOME/.local/share/rofi/themes/squared-material-red.rasi"
     mkln "plasma-org.kde.plasma.desktop-appletsrc"      "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
+    mkln "i3/config"                                    "$HOME/.i3/config"
+    mkln "polybar/config.ini"                           "$HOME/.config/polybar/config.ini"
+    mkln "polybar/launch.sh"                            "$HOME/.config/polybar/launch.sh"
+    mkln "awesome/rc.lua"                               "$HOME/.config/awesome/rc.lua"
+    mkln "awesome/themes"                               "$HOME/.config/awesome/themes"
 fi
 
 
 
 if [[ $(whoami) == "root" ]]; then
-    mkln "scripts/display/nvidia/fernseher.sh"          "/usr/bin/fernseher"
-    mkln "scripts/display/nvidia/standard.sh"           "/usr/bin/standard"
-    mkln "fancontrol"                                   "/etc/fancontrol"
-    mkln "autostart/fancontrol.service"                 "/usr/lib/systemd/system/fancontrol.service"
+    # mkln "scripts/display/nvidia/fernseher.sh"          "/usr/bin/fernseher"
+    # mkln "scripts/display/nvidia/standard.sh"           "/usr/bin/standard"
+    # mkln "fancontrol"                                   "/etc/fancontrol"
+    # mkln "autostart/fancontrol.service"                 "/usr/lib/systemd/system/fancontrol.service"
+    mkln "scripts/move_app_sink.sh"			            "/usr/bin/move_app_sink"
+    mkln ".xinitrc"                                     "/etc/X11/xinit/xinitrc"
 fi

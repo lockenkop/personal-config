@@ -2,7 +2,8 @@
 
 ### TODO
 
-
+- [ ] add i3-layouts install
+- [ ] add xowe install
 - [ ] add code extensions
 - [ ] add keyboard shortcuts
 - [ ] set default browser

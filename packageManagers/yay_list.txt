@@ -1,4 +1,4 @@
-mercury-browser-bin
-fancontrol-gui
+Fancontrol-gui
 gwe
 visual-studio-code-bin
+whatsie

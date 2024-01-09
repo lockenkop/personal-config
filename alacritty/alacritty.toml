@@ -1,0 +1,7 @@
+live_config_reload = true
+window.padding = { x = 5, y = 5}
+
+[keyboard]
+bindings = [
+    { key =  "Q", mods = "Control", action = "Quit" }
+]
