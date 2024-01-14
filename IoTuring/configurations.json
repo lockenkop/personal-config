@@ -76,13 +76,6 @@
         },
         {
             "wifi": "wlp2s0f0u8",
-            "show_na": "N",
-            "tag": "wifi",
-            "type": "Wifi"
-        },
-        {
-            "wifi": "wlp2s0f0u8",
-            "show_na": "N",
             "tag": "wifi",
             "type": "Wifi"
         }
