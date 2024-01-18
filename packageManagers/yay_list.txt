@@ -2,3 +2,6 @@ Fancontrol-gui
 gwe
 visual-studio-code-bin
 whatsie
+gtk3-classic-xfce
+#gtk3-classic-xfce
+ttf-meslo-nerd-font-powerlevel10k

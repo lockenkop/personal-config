@@ -1,1 +1,0 @@
-{"ref":"c2c73899-7261-4b44-9596-cdf923e9118c","syncData":{"version":2,"machineId":"6ea9d985-bcf9-47aa-af0e-f8259893d5d5","content":"{\"linux\":\"// Place your key bindings in this file to override the defaultsauto[]\\n[\\n    {\\n        \\\"key\\\": \\\"meta+[Backslash]\\\",\\n        \\\"command\\\": \\\"editor.action.inspectTMScopes\\\"\\n    }\\n]\"}"}}
