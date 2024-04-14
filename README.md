@@ -35,6 +35,13 @@ This script accepts one or two arguments:
 all streams will get moved to $1.<br>
 if $2, only streams matching their application.name to $2 will get moved to $1
 
+# No compositing
+## gtk
+install gtk-3-classic (gtk-3-classic-xfce for xfce) will remove all fancy shmancy things that are ugly without a compositor
+# XFCE
+starting to try XFCE
+##
+
 # KDE
 ## kwinrc
 stores kwin (KDE compositor) configuration

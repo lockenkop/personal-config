@@ -1,6 +1,6 @@
 [Desktop Entry]
-Exec=/home/jonas/personal_config/autostart/ioturing.sh
+Exec=IoTuring
 Icon=dialog-scripts
-Name=ioturing.sh
+Name=IoTuring
 Type=Application
 X-KDE-AutostartScript=true

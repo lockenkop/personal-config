@@ -5,3 +5,6 @@ whatsie
 gtk3-classic-xfce
 #gtk3-classic-xfce
 ttf-meslo-nerd-font-powerlevel10k
+protonup-rs
+hacker-typer
+protontricks

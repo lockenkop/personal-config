@@ -75,7 +75,7 @@
             "type": "Network"
         },
         {
-            "wifi": "wlp2s0f0u8",
+            "wifi": "wlan0",
             "tag": "wifi",
             "type": "Wifi"
         }

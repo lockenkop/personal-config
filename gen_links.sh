@@ -16,13 +16,12 @@ function mkln () {
 }
 
 if [[ $(whoami) == "jonas" ]]; then
-    mkln "zsh"                                          "$HOME/.zsh"
+    mkln "zsh/"                                          "$HOME/.zsh"
     mkln "zsh/.zshrc"                                   "$HOME/.zshrc"
     mkln "zsh/.zprofile"                                "$HOME/.zprofile"
     mkln "zsh/.p10k.zsh"                                "$HOME/.p10k.zsh"
     mkln "alacritty/alacritty.toml"                     "$HOME/.config/alacritty/alacritty.toml"
     mkln ".vimrc"                                       "$HOME/.vimrc"
-    mkln "autorandr"                                    "$HOME/.config/autorandr"
     mkln "autostart"                                    "$HOME/.config/autostart"
     mkln "scripts"                                      "$HOME/scripts"
     mkln "IoTuring"                                     "$HOME/.config/IoTuring"
@@ -32,6 +31,7 @@ if [[ $(whoami) == "jonas" ]]; then
 #    mkln "kwinrc"                                       "$HOME/.config/kwinrc"
     mkln "rofi"                                         "$HOME/.config/rofi"
     mkln "rofi/squared-material-red.rasi"               "$HOME/.local/share/rofi/themes/squared-material-red.rasi"
+    mkln "wofi"                                         "$HOME/.config/wofi"
 #    mkln "plasma-org.kde.plasma.desktop-appletsrc"      "$HOME/.config/plasma-org.kde.plasma.desktop-appletsrc"
 #    mkln "i3/config"                                    "$HOME/.i3/config"
 #    mkln "polybar/config.ini"                           "$HOME/.config/polybar/config.ini"
@@ -47,6 +47,7 @@ if [[ $(whoami) == "root" ]]; then
     # mkln "scripts/display/nvidia/standard.sh"           "/usr/bin/standard"
     # mkln "fancontrol"                                   "/etc/fancontrol"
     # mkln "autostart/fancontrol.service"                 "/usr/lib/systemd/system/fancontrol.service"
-#    mkln "scripts/move_app_sink.sh"			  "/usr/bin/move_app_sink"
-#    mkln ".xinitrc"                                       "/etc/X11/xinit/xinitrc"
+    mkln "scripts/move_app_sink.sh"         			  "/usr/bin/move_app_sink"
+    mkln "theme/border-only"                              "/usr/share/themes/border-only"
+    #mkln ".xinitrc"                                       "/etc/X11/xinit/xinitrc"
 fi
