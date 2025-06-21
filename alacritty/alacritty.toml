@@ -1,7 +1,7 @@
-live_config_reload = true
-window.padding = { x = 5, y = 5}
+[font]
+size = 14
+normal = { family = "FiraCode Nerd Font" }
 
-[keyboard]
-bindings = [
-    { key =  "Q", mods = "Control", action = "Quit" }
-]
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
