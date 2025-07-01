@@ -97,5 +97,6 @@ ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 
 source $ZSH/oh-my-zsh.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+. "$HOME/.local/share/../bin/env"
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
