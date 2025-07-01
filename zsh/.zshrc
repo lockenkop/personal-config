@@ -84,4 +84,4 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 
 
-# . "$HOME/.local/share/../bin/env"
+. "$HOME/.local/share/../bin/env"
