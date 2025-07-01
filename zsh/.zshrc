@@ -97,6 +97,4 @@ ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 
 source $ZSH/oh-my-zsh.sh
 
-. "$HOME/.local/share/../bin/env"
-
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
