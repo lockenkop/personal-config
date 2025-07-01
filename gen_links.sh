@@ -21,7 +21,7 @@ if [[ $(whoami) == "jonas" ]]; then
   mkln "alacritty" "$HOME/.config/alacritty"
   mkln "fastfetch" "$HOME/.config/fastfetch"
   # mkln ".vimrc"                                       "$HOME/.vimrc"
-  mkln "nvim-config" "$HOME/.config/nvim"
+  mkln "nvim" "$HOME/.config/nvim"
   # mkln "autostart"                                    "$HOME/.config/autostart"
   mkln "scripts" "$HOME/scripts"
   mkln "IoTuring" "$HOME/.config/IoTuring"

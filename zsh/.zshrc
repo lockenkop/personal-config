@@ -1,4 +1,8 @@
 
+if [[ -n "$ZSH_DEBUGRC" ]]; then
+  zmodload zsh/zprof
+fi
+
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="powerlevel10k/powerlevel10k"
 export LANG=en_US.UTF-8
@@ -98,3 +102,7 @@ ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [[ -n "$ZSH_DEBUGRC" ]]; then
+  zprof
+fi
