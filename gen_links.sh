@@ -18,6 +18,7 @@ function mkln() {
 if [[ $(whoami) == "jonas" ]]; then
   mkln "zsh/.zshrc" "$HOME/.zshrc"
   mkln "zsh/.p10k.zsh" "$HOME/.p10k.zsh"
+  mkln "zsh/.zsh_plugins.txt" "$HOME/.zsh_plugins.txt"
   mkln "alacritty" "$HOME/.config/alacritty"
   mkln "fastfetch" "$HOME/.config/fastfetch"
   # mkln ".vimrc"                                       "$HOME/.vimrc"
