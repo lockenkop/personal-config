@@ -55,8 +55,16 @@ plugins=(
     "zsh-autosuggestions"
     "zsh-syntax-highlighting"
     "zsh-completions"
-    "zsh-256color"
+    # "zsh-256color"
+    "you-should-use"
+    "z"
+    "zsh-bat"
 )
+
+# -----------------------------------------------------
+# history setup
+# -----------------------------------------------------
+setopt HIST_EXPIRE_DUPS_FIRST
 
 # -----------------------------------------------------
 # GIT
@@ -71,15 +79,15 @@ alias gsp="git stash; git pull"
 alias gcheck="git checkout"
 alias gcredential="git config credential.helper store"
 
-
 # -----------------------------------------------------
 # Kubernetes
 # -----------------------------------------------------
 alias paeskube="kubectl --kubeconfig ~/Downloads/cluster.yaml"
 alias paesargo="argo --kubeconfig ~/Downloads/cluster.yaml"
 
-bindkey "^H" backward-kill-word
-bindkey "5~" kill-word
+# -----------------------------------------------------
+# misc
+# -----------------------------------------------------
 
 # -----------------------------------------------------
 # PATHS
@@ -88,6 +96,12 @@ export PATH="/usr/lib/ccache/bin/:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# -----------------------------------------------------
+# use ctrl backspace and delete to delete whole words
+# -----------------------------------------------------
+bindkey "^H" backward-kill-word
+bindkey "5~" kill-word
 
 # -----------------------------------------------------
 # replace ssh agent for yubikey
