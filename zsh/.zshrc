@@ -3,8 +3,10 @@ if [[ -n "$ZSH_DEBUGRC" ]]; then
   zmodload zsh/zprof
 fi
 
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="powerlevel10k/powerlevel10k"
+source /usr/share/zsh-antidote/antidote.zsh
+antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
+
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 export LANG=en_US.UTF-8
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
@@ -24,8 +26,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export EDITOR=nvim
-
 pokego -r 1,2,3,4 | fastfetch --file-raw -
 
 alias c='clear'                                                        # clear terminal
@@ -44,22 +44,6 @@ alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
-# # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
-# alias mkdir='mkdir -p'
-
-#  Plugins 
-# manually add your oh-my-zsh plugins here
-plugins=(
-    "sudo"
-    "git"
-    "zsh-autosuggestions"
-    "zsh-syntax-highlighting"
-    "zsh-completions"
-    # "zsh-256color"
-    "you-should-use"
-    "z"
-    "zsh-bat"
-)
 
 # -----------------------------------------------------
 # history setup
@@ -98,12 +82,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # -----------------------------------------------------
-# use ctrl backspace and delete to delete whole words
-# -----------------------------------------------------
-bindkey "^H" backward-kill-word
-bindkey "5~" kill-word
-
-# -----------------------------------------------------
 # replace ssh agent for yubikey
 # -----------------------------------------------------
 export GPG_TTY=$(tty)
@@ -111,9 +89,7 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 gpg-connect-agent updatestartuptty /bye >/dev/null
 
-ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
-
-source $ZSH/oh-my-zsh.sh
+ZSH_CACHE_DIR=$HOME/.cache/zsh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
