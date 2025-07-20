@@ -96,6 +96,8 @@ gpg-connect-agent updatestartuptty /bye >/dev/null
 
 ZSH_CACHE_DIR=$HOME/.cache/zsh
 
+autoload -U compinit; compinit
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 if [[ -n "$ZSH_DEBUGRC" ]]; then
