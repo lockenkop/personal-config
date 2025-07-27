@@ -11,7 +11,6 @@
 
     "modules-left": [
         "sway/workspaces",
-        "custom/vpn",
     ],
 
     "modules-center": [
@@ -26,7 +25,9 @@
         "memory",
         "battery",
         "network",
-        "pulseaudio"
+        "custom/vpn",
+        "pulseaudio",
+        "backlight"
     ],
 
     "sway/workspaces": {
@@ -64,37 +65,57 @@
     },
 
     "battery": {
-        "format": "bat {capacity}%",
-        "interval": 5,
+        "format": "<span font='Firacode Nerd Font 11'>{icon}</span>  {capacity}% - {time}",
+        "format-icons": ["", "", "", "", ""],
+        "format-time": "{H}h{M}m",
+        "format-charging": "<span font='Firacode Nerd Font'></span>  <span font='Firacode Nerd Font 11'>{icon}</span>  {capacity}% - {time}",
+        "format-full": "<span font='Firacode Nerd Font'></span>  <span font='Firacode Nerd Font'>{icon}</span>  Charged",
+        "interval": 30,
         "states": {
-            "warning": 20,
+            "warning": 30,
             "critical": 10
         },
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "2"
     },
 
     "network": {
-        "format-wifi" : "wifi {bandwidthDownBits}",
-        "format-ethernet": "enth {bandwidthDownBits}",
-        "format-disconnected" : "no network",
-        "interval": 5,
+        "format": "{icon}",
+        "format-alt": "{ipaddr}/{cidr} {icon}",
+        "format-alt-click": "click-right",
+        "format-wifi": "<span font='Firacode Nerd Font'> </span>  {essid} ({signalStrength}%)",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "⚠ Disconnected",
+        // "on-click": "terminator -e ~/sway/scripts/network-manager",
         "tooltip": false
     },
 
     "pulseaudio": {
-        "scroll-step": 5,
-        "max-volume": 150,
-        "format": "vol {volume}%",
-        "format-bluetooth": "vol {volume}%",
-        "nospacing": 1,
-        "on-click": "pavucontrol",
-        "tooltip": false
+      "format": "{icon:1}  {volume}%",
+      "format-bluetooth": " {icon:2} {volume:4}% - {desc}",
+      "format-alt": "{icon:2} {volume:4}%",
+      "format-alt-click": "click-right",
+      "format-muted": "󰝟  {volume}%",
+      "format-icons": {
+          "headphone": [" ", " ", " ", " "],
+          "default": ["", "", "", ""]
+      },
+      "scroll-step": 0.5,
+      "on-click": "pavucontrol",
+      "tooltip": false
     },
 
+    "backlight": {
+      "format": "{icon}  {percent}%",
+      "format-icons": ["󰃟"],
+      "tooltip": false,
+      "scroll-step": 0.5,
+    },
+    
     "custom/vpn": {
-        "interval": 3,
-        "format": "{}",
-        "exec": "ip add show | grep -qF Laptop_Fenchel && echo 🔒 Connected || echo 🔓 Disconnected",
+        "interval": 30,
+        "format": "{} ",
+        "exec": "ip add show | grep -qF Laptop_Fenchel && echo 🔒|| echo 🔓",
         "max-length": "100",
         "on-click": "nmcli connection up Laptop_Fenchel",
         "on-click-right": "nmcli connection down Laptop_Fenchel"

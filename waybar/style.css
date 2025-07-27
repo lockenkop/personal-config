@@ -25,6 +25,8 @@ tooltip {
 #memory,
 #battery,
 #network,
+#backlight,
+#custom-vpn,
 #pulseaudio {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
@@ -66,7 +68,23 @@ tooltip {
 #battery {
     background-color: #a9b665;
     border: 2px solid #c7ab7a;
-    color: #6c782e;
+    color: #1d2021;
+}
+
+#battery.warning{
+    background-color: #dbc118;
+    border: 2px solid #c7ab7a;
+    color: #000000;
+}
+#battery.critical{
+    background-color: #d10d0d;
+    border: 2px solid #c7ab7a;
+    color: #000000;
+}
+#battery.urgent {
+    background-color: #ddc7a1;
+    border: 2px solid #c7ab7a;
+    color: #c14a4a;
 }
 
 #cpu,
@@ -85,17 +103,14 @@ tooltip {
     color: #c14a4a;
 }
 
-#battery.warning,
-#battery.critical,
-#battery.urgent {
+#backlight {
     background-color: #ddc7a1;
     border: 2px solid #c7ab7a;
-    color: #c14a4a;
+    color: #1d2021;
 }
+
 #custom-vpn {
-    font-family: "JetBrainsMono Nerd Font";
-    font-size: 14px;
-    padding-left: 2px;
-    padding-right: 2px;
-    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background-color: #ddc7a1;
+    border: 1px solid #c7ab7a;
+    color: #1d2021;
 }
