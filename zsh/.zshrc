@@ -48,7 +48,13 @@ alias .5='cd ../../../../..'
 # -----------------------------------------------------
 # history setup
 # -----------------------------------------------------
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=50000
 setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_ALL_DUPS
+setopt INC_APPEND_HISTORY
+
 
 # -----------------------------------------------------
 # GIT
