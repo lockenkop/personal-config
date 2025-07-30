@@ -3,6 +3,11 @@ if [[ -n "$ZSH_DEBUGRC" ]]; then
   zmodload zsh/zprof
 fi
 
+# If not in tmux, start tmux.
+if [[ -z ${TMUX+X}${ZSH_SCRIPT+X}${ZSH_EXECUTION_STRING+X} ]]; then
+  exec tmux
+fi
+
 source /usr/share/zsh-antidote/antidote.zsh
 antidote load ${ZDOTDIR:-$HOME}/.zsh_plugins.txt
 

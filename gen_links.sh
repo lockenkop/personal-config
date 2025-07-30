@@ -21,6 +21,7 @@ if [[ $(whoami) == "jonas" ]]; then
   mkln "zsh/.zsh_plugins.txt" "$HOME/.zsh_plugins.txt"
   mkln "alacritty" "$HOME/.config/alacritty"
   mkln "fastfetch" "$HOME/.config/fastfetch"
+  mkln "tmux/.tmux.conf" "$HOME/.tmux.conf"
   # mkln ".vimrc"                                       "$HOME/.vimrc"
   mkln "nvim" "$HOME/.config/nvim"
   # mkln "autostart"                                    "$HOME/.config/autostart"
